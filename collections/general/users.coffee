@@ -8,10 +8,10 @@ _email = Astronomy.Class.create
     address: String
     verified: Boolean
 
-SE.Users = Meteor.users
-SE.User = SE.BaseClass.inherit
+PIX.Users = Meteor.users
+PIX.User = PIX.BaseClass.inherit
   name: 'User'
-  collection: SE.Users
+  collection: PIX.Users
   fields:
     username: String
     services: Object

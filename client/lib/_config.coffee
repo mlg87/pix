@@ -1,5 +1,5 @@
 # set the global namespace
-@SE = {}
+@PIX = {}
 
 # Allow accessing parent template's instance by it's name
 # -------------------------------------------------------

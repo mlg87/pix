@@ -1,5 +1,5 @@
 # set the global namespace
-@SE = {}
+@PIX = {}
 
 # login tokens expire after 1 day
 Accounts.config ->
