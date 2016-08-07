@@ -1,5 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700);
+
 body {
-  background-color: $color-flat-light-gray;
+  background-color: $color-body-background;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-add-container {

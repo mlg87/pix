@@ -12,3 +12,6 @@ UI.registerHelper 'toCaps', (string) ->
 
 UI.registerHelper 'lowerCase', (string) ->
   _.lowerCase string
+
+UI.registerHelper 'formatDate', (date) ->
+  moment(date).format('dddd, MMMM Do YYYY, h:mm:ss a')

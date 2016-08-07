@@ -29,7 +29,7 @@ $directions: 'top' 'right' 'bottom' 'left';
   cursor: pointer;
 }
 
-.accpet {
+.accept {
   background-color: $color-accept;
   &:hover {
     background-color: lighten($color-accept, 20%);

@@ -18,3 +18,6 @@ Router.route '/home',
   # subscriptions:
   #   @subscribe 'users'
   #   @subscribe('users').wait()
+
+Router.route '/season-schedule',
+  name: 'seasonSchedule'

@@ -1,2 +1,8 @@
 h5 Thanks for logging in {{signedInUser.firstName}}
-+dropdown
+a.btn.waves-effect.waves-light.accept get season schedule
+
+each week in seasonSchedule
+  h3 Week {{week.title}}
+  each game in week.games
+    h5 {{game.away.name}} @ {{game.home.name}}
+    p {{formatDate game.scheduled}} | {{game.venue.name}} ({{game.venue.surface}})

@@ -1,3 +1,4 @@
+// just some nice colors
 $color-navy: rgba(41, 51, 155, 1);
 $color-marine: rgba(116, 164, 188, 1);
 $color-seafoam: rgba(182, 214, 204, 1);
@@ -10,7 +11,6 @@ $color3: rgba(255, 234, 72, 1);
 $color4: rgba(123, 208, 150, 1);
 $color5: rgba(253, 151, 84, 1);
 
-
 $color-flat-navy: rgba(44, 62, 80, 1);
 $color-flat-red: rgba(231, 76, 60, 1);
 $color-flat-royal: rgba(52, 152, 219, 1);
@@ -19,7 +19,20 @@ $color-flat-light-gray: rgba(248, 253, 254, 1);
 $color-flat-gray: rgba(236, 240, 241, 1);
 $color-flat-dark-gray: rgba(111, 113, 113, 1);
 
+$color-pix-gray: #F3F0F2;
+$color-pix-blue: #05AFDA;
+$color-pix-teal: #11DCF3;
+$color-pix-orange: #F5B364;
+$color-pix-sand: #D9B089;
 
+// vars used in css
 $color-focus: $color-flat-navy;
 $color-accept: $color-flat-royal;
 $color-danger: $color-flat-red;
+
+$color-btn-primary: $color-flat-royal;
+
+$color-body-background: white;
+$color-nav-background: white;
+$color-main-text: $color-flat-royal;
+$color-nav-text: $color-flat-royal;

@@ -9,7 +9,7 @@ Template.navbar.onCreated ->
     links =
       if Meteor.user()
         [
-          {value: 'home'}
+          {value: 'season-schedule'}
           {value: 'account', id: 'account-options', dropdown: true, options: USER_ACCOUNTS_OPTIONS}
           {value: 'search'}
         ]
