@@ -4,3 +4,10 @@ Meteor.publish 'users', (query={}, options={}) ->
   # user = PIX.Users.findOne {_id: @userId}
 
   PIX.Users.find query, options
+
+Meteor.publish 'games', (query={}, options={}) ->
+  return @ready() unless @userId?
+
+  games = PIX.Games.find query, options
+  console.log 'gameyGames', games
+  games

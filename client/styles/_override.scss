@@ -1,10 +1,58 @@
 nav {
   background-color: $color-nav-background;
+  box-shadow: none;
+  border-bottom: 1px solid $color-main-border;
+  height: $nav-bar-height;
+
   & ul a {
-    color: $color-nav-text !important;
+    color: $color-nav-text;
+	  font-family: Avenir;
+  	font-weight: 500;
+  	letter-spacing: 0.4px;
+
+    &:hover {
+      background: none;
+      color: $color-nav-text-hover;
+    }
   }
+
+  & .navbar-fixed {
+    height: $nav-bar-height !important;
+  }
+
   & .brand-logo {
     color: $color-nav-text !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .navbar-fixed {
+    height: $nav-bar-height;
+  }
+  nav {
+    line-height: $nav-bar-height;
+  }
+}
+
+// dropdowns
+.dropdown-content li > a, .dropdown-content li > span {
+  color: $color-main-text;
+
+
+}
+
+.dropdown-content {
+  box-shadow: none;
+  border-left: 1px solid $color-main-border;
+  border-bottom: 1px solid $color-main-border;
+  border-right: 1px solid $color-main-border;
+  border-bottom-left-radius: $main-border-radius;
+  border-bottom-right-radius: $main-border-radius;
+
+  & li {
+    &:hover {
+      background: none;
+    }
   }
 }
 

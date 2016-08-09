@@ -6,16 +6,18 @@ ul.dropdown-content(id="test")
   li.divider
   li
     a(href="#") three
-nav
-  .nav-wrapper
-    .container
-      a.brand-logo(href="/home") pix
-      ul#nav-mobile.right.hide-on-med-and-down
-        each links
-          if dropdown
-            {{log this 'dropdown link option'}}
-            li
-              a.dropdown-button(data-activates="test") {{toCaps value}}
-          else
-            li
-              a(href="/{{value}}") {{toCaps value}}
+    
+.navbar-fixed    
+  nav
+    .nav-wrapper
+      .container
+        a.brand-logo(href="/home") pix
+        ul#nav-mobile.right.hide-on-med-and-down
+          each links
+            if dropdown
+              {{log this 'dropdown link option'}}
+              li
+                a.light-text.dropdown-button.light(data-activates="test", data-beloworigin="true") {{startCase value}}
+            else
+              li
+                a.light-text(href="/{{value}}") {{startCase value}}

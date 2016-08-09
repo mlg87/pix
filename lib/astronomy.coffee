@@ -1,4 +1,5 @@
-Validator = require('meteor/jagi:astronomy').Validator
+Astronomy = require 'meteor/jagi:astronomy'
+Validator = Astronomy.Validator
 
 Validator.create
   name: 'unique'

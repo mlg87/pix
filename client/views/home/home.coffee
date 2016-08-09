@@ -15,4 +15,5 @@ Template.home.events
         sAlert.error err
         return
       console.log res.data.weeks
+      
       inst.seasonSchedule.set res.data.weeks

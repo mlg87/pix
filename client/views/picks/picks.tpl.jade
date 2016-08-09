@@ -1,0 +1,15 @@
+.main-container
+  with week
+    .main-container-heading.valign-wrapper
+      .valign.margin-left-15 Week {{ifElse week week.week 'Err'}}
+    .main-container-body
+      .row.margin-bottom-0
+        .col.s3
+          .col-header AWAY
+        .col.s4
+          .col-header SPREAD
+        .col.s3
+          .col-header HOME
+        .col.s2
+          .col-header RESULT
+      

@@ -1,8 +1,8 @@
 h5 2016 NFL Season Schedule
 
-unless seasonSchedule
-  .progress
-    .indeterminate
+//- unless seasonSchedule
+//-   .progress
+//-     .indeterminate
     
 if seasonSchedule
   each week in seasonSchedule
@@ -23,10 +23,10 @@ if seasonSchedule
   ul.pagination.center-align
     li.disabled
       a(href="#!")
-        i.fa.fa-chevron-left
+        i.material-icons chevron_left
     each week in seasonSchedule
       li.waves-effect
         a(href="#!") {{week.title}}
     li.waves-effect
       a(href="#!")
-        i.fa.fa-chevron-right
+        i.material-icons chevron_right

@@ -34,4 +34,8 @@ juliancwirko:s-alert-slide
 http
 momentjs:moment
 risul:moment-timezone
-fortawesome:fontawesome
+
+# meteor toys alternative
+constellation:console
+constellation:subscriptions
+lai:ddp-inspector

@@ -3,3 +3,36 @@
   border-radius: 2px;
   color: white;
 }
+
+.main-container {
+  margin: 20px;
+  border: 1px solid $color-main-border;
+  border-radius: $main-border-radius;
+}
+
+.main-container-heading {
+  height: 22.5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $color-main-border;
+
+  & p {
+    font-size: $main-heading-font-size;
+  }
+}
+
+.main-container-body {
+  height: calc(100vh - 135px);
+  padding: 20px;
+}
+
+.table-header {
+  & li {
+    display: inline;
+  }
+}
+
+.col-header {
+  text-align: center;
+  letter-spacing: .4px;
+}

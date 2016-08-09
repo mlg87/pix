@@ -2,11 +2,19 @@
 
 body {
   background-color: $color-body-background;
-  font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  font-family: Avenir;
 }
 
 .main-add-container {
   position: fixed;
   bottom: 20px;
   left: 20px;
+}
+
+.left-col {
+  border-right: 1px solid $color-main-border;
+  position: relative;
+  // 52.5px is height of nav
+  height: calc(100vh - 52.5px);
 }

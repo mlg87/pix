@@ -9,9 +9,11 @@ Template.navbar.onCreated ->
     links =
       if Meteor.user()
         [
-          {value: 'season-schedule'}
-          {value: 'account', id: 'account-options', dropdown: true, options: USER_ACCOUNTS_OPTIONS}
-          {value: 'search'}
+          {value: 'pools'}
+          {value: 'picks'}
+          {value: 'smack'}
+          {value: 'standings'}
+          {value: 'profile', id: 'profile-options', dropdown: true, options: USER_PROFILE_OPTIONS}
         ]
       else
         [
@@ -19,7 +21,7 @@ Template.navbar.onCreated ->
         ]
     @links.set links
 
-USER_ACCOUNTS_OPTIONS = [
+USER_PROFILE_OPTIONS = [
   {value: 'profile'}
   {value: 'friends'}
   {value: 'spending'}

@@ -25,6 +25,14 @@ $color-pix-teal: #11DCF3;
 $color-pix-orange: #F5B364;
 $color-pix-sand: #D9B089;
 
+// from leede
+$color-leede-white: #fff;
+$color-leede-gray: #4a4a4a;
+$color-leede-medium-gray: #979797;
+$color-leede-light-gray: #cac8ca;
+$color-leede-orange: #e56130;
+$color-leede-blue: #082661;
+
 // vars used in css
 $color-focus: $color-flat-navy;
 $color-accept: $color-flat-royal;
@@ -34,5 +42,9 @@ $color-btn-primary: $color-flat-royal;
 
 $color-body-background: white;
 $color-nav-background: white;
-$color-main-text: $color-flat-royal;
-$color-nav-text: $color-flat-royal;
+
+$color-main-text: $color-leede-gray;
+$color-nav-text: $color-leede-gray;
+$color-nav-text-hover: $color-leede-orange;
+
+$color-main-border: $color-leede-medium-gray;

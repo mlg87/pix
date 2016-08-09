@@ -18,6 +18,29 @@ $.fn.extend
       form[field.name] = field.value.trim()
     form
 
+###*
+ * an extension of the template prototype to allow easier declaration of subs
+ * @param  {Object} subs an object of methods that return an object containing
+ *                       the query, options and autorun boolean. If a sub is null
+ *                       we don't do anything.
+###
+Template.prototype.subscriptions = (subs) ->
+  templateName = @viewName.replace 'Template.', ''
+  Template[templateName].onCreated ->
+    @autorun =>
+      _.each subs, (sub, collection) =>
+        sub = sub()
+        if sub.condition is undefined or sub.condition
+          return unless sub
+          if sub.autorun
+            @subscribe collection, sub.query, sub.options, sub.settings
+    _.each subs, (sub, collection) =>
+      sub = sub()
+      if sub.condition is undefined or sub.condition
+        return unless sub
+        unless sub.autorun
+          @subscribe collection, sub.query, sub.options, sub.settings
+
 # sAlert
 # ------
 sAlert.config

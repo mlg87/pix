@@ -19,5 +19,8 @@ Router.route '/home',
   #   @subscribe 'users'
   #   @subscribe('users').wait()
 
-Router.route '/season-schedule',
-  name: 'seasonSchedule'
+Router.route '/pools',
+  name: 'pools'
+
+Router.route '/picks',
+  name: 'picks'
