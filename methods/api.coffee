@@ -19,5 +19,8 @@ if Meteor.isServer
             away: game.away.name
             stadium: game.venue.name
             surface: game.venue.surface
-            kickoff: moment(game.scheduled).toDate()
+            kickoff:
+              jsDate: moment(game.scheduled).toDate()
+              dayOfWeek: moment(game.scheduled).format('dddd')
+              dayOfMonth: moment(game.scheduled).format('D')
           gameForDb.save()

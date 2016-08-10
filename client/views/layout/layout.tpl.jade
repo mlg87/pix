@@ -3,9 +3,8 @@ navbar
 
 .row.margin-bottom-0
   .col.s3.left-col.no-padding
-    h5 blah blah blah
-    h6 look at me
+    +yield 'leftAside'
   .col.s9.right-col.no-padding
-    +yield
+    +yield 'main'
   
 +sAlert

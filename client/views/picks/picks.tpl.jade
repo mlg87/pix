@@ -1,9 +1,10 @@
 .main-container
   with week
+    {{log this}}
     .main-container-heading.valign-wrapper
       .valign.margin-left-15 Week {{ifElse week week.week 'Err'}}
     .main-container-body
-      .row.margin-bottom-0
+      .row.margin-bottom-15
         .col.s3
           .col-header AWAY
         .col.s4
@@ -12,4 +13,27 @@
           .col-header HOME
         .col.s2
           .col-header RESULT
-      
+      each gameGroups
+        .row.margin-bottom-20
+          span.game-group-day {{toCaps day.displayDate}}
+        each game in games
+          .row.margin-bottom-20
+            .col.s3
+              input.hidden(
+                type="radio"
+                id="{{game.away}}"
+                name="{{game._id}}"
+              )
+              label.clickable.absolute.game-info(for="{{game.away}}") {{toCaps game.away}}
+            .col.s4
+              .game-info.center-align +6.5
+            .col.s3
+              input.hidden(
+                type="radio"
+                id="{{game.home}}"
+                name="{{game._id}}"
+              )
+              label.clickable.absolute.game-info(for="{{game.home}}") {{toCaps game.home}}
+            .col.s2
+              .game-info.center-align {{ifElse game.result game.result '--'}}
+        

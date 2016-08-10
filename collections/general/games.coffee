@@ -1,10 +1,17 @@
 Astronomy = require 'meteor/jagi:astronomy'
 
-_email = Astronomy.Class.create
-  name: '_email'
+_kickoff = Astronomy.Class.create
+  name: '_kickoff'
   fields:
-    address: String
-    verified: Boolean
+    jsDate: Date
+    dayOfWeek: String
+    dayOfMonth: String
+
+_score = Astronomy.Class.create
+  name: '_score'
+  fields:
+    home: Number
+    away: Number
 
 PIX.Games = new Mongo.Collection 'games'
 PIX.Game = PIX.BaseClass.inherit
@@ -17,8 +24,11 @@ PIX.Game = PIX.BaseClass.inherit
     away: String
     stadium: String
     surface: String
-    kickoff: Date
+    kickoff: _kickoff
     # spread is always relative to away team
     spread:
       type: Number
+      optional: true
+    score:
+      type: _score
       optional: true

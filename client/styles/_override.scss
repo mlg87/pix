@@ -79,6 +79,19 @@ input:focus:not([readonly]) {
   }
 }
 
+// radio buttons
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
+  background-color: $color-radio-fill;
+}
+
+[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+  border-color: $color-radio-fill;
+}
+
+[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+  border-width: .5px;
+}
+
 .btn {
   cursor: pointer;
   &:focus {

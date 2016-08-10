@@ -21,6 +21,10 @@ Template.navbar.onCreated ->
         ]
     @links.set links
 
+Template.navbar.helpers
+  activeLink: ->
+    @value is Router.current().route.getName()
+
 USER_PROFILE_OPTIONS = [
   {value: 'profile'}
   {value: 'friends'}

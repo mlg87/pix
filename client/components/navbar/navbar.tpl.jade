@@ -20,4 +20,4 @@ ul.dropdown-content(id="test")
                 a.light-text.dropdown-button.light(data-activates="test", data-beloworigin="true") {{startCase value}}
             else
               li
-                a.light-text(href="/{{value}}") {{startCase value}}
+                a.light-text(href="{{pathFor value}}", class="{{ifThen activeLink 'navbar-active-link'}}") {{startCase value}}

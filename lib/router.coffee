@@ -19,8 +19,12 @@ Router.route '/home',
   #   @subscribe 'users'
   #   @subscribe('users').wait()
 
-Router.route '/pools',
-  name: 'pools'
+Router.route 'pools', ->
+  @render pools: to: 'main'
+  @render poolsAside: to: 'leftAside'
 
-Router.route '/picks',
-  name: 'picks'
+Router.route 'picks', ->
+  @render 'picks', to: 'main'
+  @render 'picksAside', to: 'leftAside'
+  # picks: to: 'main'
+  # picksAside: to: 'leftAside'

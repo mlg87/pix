@@ -36,3 +36,14 @@
   text-align: center;
   letter-spacing: .4px;
 }
+
+.game-group-day {
+  letter-spacing: .5px;
+  font-size: $main-little-heading-font-size;
+}
+
+.game-info {
+  font-size: $main-game-info-font-size;
+  letter-spacing: .6px;
+  color: $color-main-text;
+}
