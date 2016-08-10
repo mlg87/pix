@@ -1,2 +1,10 @@
 .aside-container
-  .aside-header.margin-top-20 League Picks
+  .aside-header.margin-top-20.margin-bottom-20 League Picks
+  .container
+    each user in usersInLeague
+      .row
+        .user-container-basic
+          unless user.profPic
+            svg.user-avatar-small.margin-right-8
+              use(xlink:href="#icon-user-avatar")
+          span.user-aside-name {{user.username}}

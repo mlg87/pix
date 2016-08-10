@@ -2,7 +2,7 @@ $pixels:  -20 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 125 
 $directions: 'top' 'right' 'bottom' 'left';
 
 @each $direction in $directions {
-  @each $pixel in $pixels {
+  @for $pixel from -20 through 300 {
     .margin-#{$direction}-#{$pixel} {
       margin-#{$direction}: #{$pixel}px !important;
     }

@@ -47,3 +47,19 @@
   letter-spacing: .6px;
   color: $color-main-text;
 }
+
+.user-aside-name {
+  font-size: $main-heading-font-size;
+  letter-spacing: .4px;
+}
+
+// user things
+.user-container-basic {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar-small {
+  height: 100%;
+  width: 100%;
+}
