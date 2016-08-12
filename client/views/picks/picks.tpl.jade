@@ -2,7 +2,9 @@
   with week
     {{log this}}
     .main-container-heading.valign-wrapper
-      .valign.margin-left-15 Week {{ifElse week week.week 'Err'}}
+      .valign.margin-left-15 Week
+      each weekLinks
+        .valign.margin-left-16.clickable.week(data-week="{{this}}", class="{{ifThen isActiveWeek 'active-week'}}") {{this}}
     .main-container-body
       .row.margin-bottom-15
         .col.s3
@@ -17,7 +19,7 @@
         .row.margin-bottom-20
           span.game-group-day {{toCaps day.displayDate}}
         each game in games
-          .row.margin-bottom-20
+          .row.margin-bottom-20.fader
             .col.s3
               input.hidden(
                 type="radio"
